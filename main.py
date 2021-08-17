@@ -5,7 +5,7 @@ from PIL import Image
 from PIL.ExifTags import TAGS
 
 from tkinter.filedialog import askopenfilename
-imagename = askopenfilename('.jpg)')
+imagename = askopenfilename()
 
 imagename = "/Users/harrisongoeldner/OneDrive/Pictures/Olympus/2020/2020-02-15/P2130004.JPG"
 
@@ -16,6 +16,6 @@ exifdata = image.getexif()
 for tagid in exifdata:
     tagname = TAGS.get(tagid, tagid)
     data = exifdata.get(tagid)
- #   if isinstance(data, bytes):
-  #      data = data.decode()
+    if isinstance(data, bytes):
+        data = data.decode()
     print(f"{tagname:25}: {data}")
