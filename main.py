@@ -2,7 +2,7 @@
 import sys, os
 import tkinter as tk
 from tkinter.filedialog import Directory, askdirectory
-import pathlib
+#import pathlib
 from fnmatch import fnmatch
 try:
     from PIL import Image
@@ -46,12 +46,12 @@ def main():
         func_data = exif(image)
         exif_database.append([func_data[0],func_data[1],image])
     # print(exif_database)
-    lens=[]
-    for d in range(len(exif_database)):
-        lens.append(exif_database[d][1])
-    print(lens)
+    focal=[]
+    for d in range(focal(exif_database)):
+        focal.append(exif_database[d][1])
+    print(focal)
+    
             
-            
-
+# Run main()
 if __name__ == "__main__":
     main()
