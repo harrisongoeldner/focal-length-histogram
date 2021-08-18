@@ -9,6 +9,6 @@ filelist=[]
 for root, dirs, files in os.walk(directory):
     for file in files:
         if(file.lower().endswith(".jpg")):
-            filelist.append(os.path.join(directory,file))
+            filelist.append(os.path.join(root,file))
 for name in filelist:
     print(name)
