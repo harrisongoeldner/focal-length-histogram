@@ -19,11 +19,9 @@ File can be run by launching sage jupyter workbook and running each section one 
 
 ## Installation
 ### Downloading the Repository
-Download the project files using:
+
+Download the repository with:
+
 ```
-wget https://github.com/harrisongoeldner/primex/archive/php-bridge-server.zip
-```
-The repository can also be downloaded with:
-```
-git clone https://github.com/harrisongoeldner/primex.git
+git clone https://github.com/harrisongoeldner/focal-length-histogram.git
 ```
