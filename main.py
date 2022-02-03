@@ -3,7 +3,7 @@ import sys, os
 import tkinter as tk
 from tkinter.filedialog import Directory, askdirectory
 #import pathlib
-from fnmatch import fnmatch
+#from fnmatch import fnmatch
 try:
     from PIL import Image
     from PIL.ExifTags import TAGS
